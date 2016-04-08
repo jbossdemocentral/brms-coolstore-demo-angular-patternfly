@@ -1,0 +1,21 @@
+keycloak:
+        build: .
+        dockerfile: Dockerfile.keycloak
+        hostname: keycloak
+        expose:
+                - 8080
+        ports:
+                - "8181:8080"
+
+coolstore:
+        build: .
+        dockerfile: Dockerfile.coolstore
+        hostname: coolstore
+        expose:
+                - 9990
+                - 9999
+                - 8080
+        ports:
+                - "8080:8080"
+        links:
+                - keycloak

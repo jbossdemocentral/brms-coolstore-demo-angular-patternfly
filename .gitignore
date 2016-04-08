@@ -1,0 +1,10 @@
+*.zip
+target/
+.DS_Store
+*.classpath
+*.settings
+.security/
+*.jar
+/.dockerignore
+/Dockerfile*
+/docker-compose.yml

@@ -1,0 +1,15 @@
+id: jbossdemocentral-brms-coolstore-angular-patternfly
+title: JBoss BRMS Cool Store Demo w/Angular & Patternfly
+github_repo_url: https://github.com/jbossdemocentral/brms-coolstore-demo-angular-patternfly
+technologies:
+  - RESTful
+  - CEP
+  - JBoss EAP
+  - JBoss BRMS
+  - AngularJS
+  - Patternfly
+  - Keycloak
+summary: This is a retail web store demo where you will find rules, decision tables, events, and a ruleflow that is leveraged by a single page application. The application is a WAR built using the JBoss BRMS generated project as a dependency, providing an example project showing how developers can focus on the application code while the business analysts can focus on rules, events, and ruleflows in the JBoss BRMS product web based dashboard. The web app is an Angular-based single page application using UX provided by Patternfly, and protected via Keycloak for SSO and session management.
+level: Beginner
+product: brms
+author: Jason Milliron, Andrew Block, Eric D. Schabell, James Falkner
