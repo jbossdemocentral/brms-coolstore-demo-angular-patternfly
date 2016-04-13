@@ -17,5 +17,7 @@ coolstore:
                 - 8080
         ports:
                 - "8080:8080"
+                - "9999:9999"
+                - "9990:9990"
         links:
                 - keycloak
