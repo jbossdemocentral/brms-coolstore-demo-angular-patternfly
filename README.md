@@ -15,7 +15,7 @@ Building the Demo with Docker
 -----------------------------------------
 The following steps can be used to configure and run the demo in a container
 
-1. [Download and unzip.](https://github.com/jbossdemocentral/brms-coolstore-demo/archive/master.zip)
+1. [Download and unzip.](https://github.com/jbossdemocentral/brms-coolstore-demo-angular-patternfly/archive/master.zip)
 
 2. Add products [installs directory](installs/).
 
