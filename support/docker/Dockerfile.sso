@@ -1,0 +1,33 @@
+# Use jbossdemocentral/developer as the base
+FROM jbossdemocentral/developer:jdk8-uid
+
+# Maintainer details
+MAINTAINER James Falkner <jfalkner@redhat.com>
+
+# Environment Variables 
+
+ENV SSO_VERSION 7.0.0
+ENV SSO_HOME /opt/jboss/rh-sso-7.0
+
+# ADD Installation Files
+COPY installs/rh-sso-${SSO_VERSION}.zip /opt/jboss/
+
+COPY support/sso-config.json support/sso-setup.cli /tmp/
+USER root
+
+# setup sso
+RUN chown jboss /tmp/sso-config.json /tmp/sso-setup.cli
+
+USER jboss
+
+RUN unzip -d /opt/jboss /opt/jboss/rh-sso-${SSO_VERSION}.zip
+
+RUN sed -i 's/KEYCLOAK_CONFIG_FILE/\/tmp\/sso-config.json/' /tmp/sso-setup.cli && \
+  ${SSO_HOME}/bin/jboss-cli.sh --file=/tmp/sso-setup.cli && \
+  rm -rf ${SSO_HOME}/standalone/configuration/standalone_xml_history/current
+
+# Exposed default sso port
+EXPOSE 8080
+
+# Run SSO
+CMD ["/opt/jboss/rh-sso-7.0/bin/standalone.sh","-c","standalone.xml","-b", "0.0.0.0","-bmanagement","0.0.0.0"]

@@ -1,7 +1,7 @@
 JBoss BRMS Suite Cool Store Demo with AngularJS & Patternfly
 ================================
 This is a retail web store demo where you will find rules, decision tables, events, and a ruleflow 
-that is accessed by a single page [Angular JS](https://angularjs.org)-based application, protected by [KeyCloak](http://keycloak.jboss.org), whose UX is driven primarily by the patterns and best practices from [PatternFly](https://patternfly.org). The demo is a remake of the [JBoss Developer Cool Store Vaadin-based Demo](https://github.com/jbossdemocentral/brms-coolstore-demo).
+that is accessed by a single page [Angular JS](https://angularjs.org)-based application, protected by [Red Hat SSO/Keycloak](http://keycloak.jboss.org), whose UX is driven primarily by the patterns and best practices from [PatternFly](https://patternfly.org). The demo is a remake of the [JBoss Developer Cool Store Vaadin-based Demo](https://github.com/jbossdemocentral/brms-coolstore-demo).
 
 The web application is a WAR built using the JBoss BRMS
 generated project as a dependency, providing an example project showing how developers can focus on the 
@@ -75,6 +75,8 @@ References
 Released versions
 -----------------
 See the tagged releases for the following versions of the product:
+
+- v1.1 JBoss BRMS 6.3.0 on JBoss EAP 6.4.8 protected with Red Hat SSO 7.0.0 with cool store installed
 
 - v1.0 Initial version based on the awesome [JBoss Developer Cool Store Vaadin Demo](https://github.com/jbossdemocentral/brms-coolstore-demo)
 
