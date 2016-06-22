@@ -3,12 +3,19 @@ JBoss BRMS Suite Cool Store Demo with AngularJS & Patternfly
 This is a retail web store demo where you will find rules, decision tables, events, and a ruleflow 
 that is accessed by a single page [Angular JS](https://angularjs.org)-based application, protected by [Red Hat SSO/Keycloak](http://keycloak.jboss.org), whose UX is driven primarily by the patterns and best practices from [PatternFly](https://patternfly.org). The demo is a remake of the [JBoss Developer Cool Store Vaadin-based Demo](https://github.com/jbossdemocentral/brms-coolstore-demo).
 
+![Store Screenshot](/../screenshots/screenshots/store.png?raw=true "Store Screenshot")
+
 The web application is a WAR built using the JBoss BRMS
 generated project as a dependency, providing an example project showing how developers can focus on the 
 application code while the business analysts can focus on rules, events, and ruleflows in the 
 JBoss BRMS product web based dashboard.
 
-This demo is built with, contained by and executed using [Docker](https://docker.com).
+![Cart Screenshot](/../screenshots/screenshots/cart.png?raw=true "Cart Screenshot")
+
+This demo is built with, contained by and executed using [Docker](https://docker.com). Upon access, you'll be asked to login to the Red Hat SSO realm for store access.
+
+![SSO Screenshot](/../screenshots/screenshots/sso.png?raw=true "SSO Screenshot")
+
 
 
 Building the Demo with Docker
