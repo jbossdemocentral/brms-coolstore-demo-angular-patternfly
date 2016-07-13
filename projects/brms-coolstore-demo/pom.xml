@@ -416,7 +416,7 @@
 
 		<!-- Define the version of JBoss BRMS product to import. -->
 		<!-- jboss.brms.version>6.0.3-redhat-4</jboss.brms.version -->
-		<jboss.brms.version>6.2.0.GA-redhat-1</jboss.brms.version>
+		<jboss.brms.version>6.3.0.GA-redhat-3</jboss.brms.version>
 
 		<project.encoding>UTF-8</project.encoding>
 	</properties>
