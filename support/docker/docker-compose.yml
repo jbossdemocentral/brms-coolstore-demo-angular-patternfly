@@ -1,7 +1,7 @@
-keycloak:
+sso:
         build: .
-        dockerfile: Dockerfile.keycloak
-        hostname: keycloak
+        dockerfile: Dockerfile.sso
+        hostname: sso
         expose:
                 - 8080
         ports:
@@ -20,4 +20,4 @@ coolstore:
                 - "9999:9999"
                 - "9990:9990"
         links:
-                - keycloak
+                - sso

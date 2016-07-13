@@ -1,7 +1,7 @@
 Download the following from the JBoss Customer Portal
 
  * EAP installer (jboss-eap-6.4.0-installer.jar)
- * EAP patch (jboss-eap-6.4.7-patch.zip)
+ * EAP patch (jboss-eap-6.4.8-patch.zip)
  * BRMS installer (jboss-brms-6.3.0.GA-installer.jar)
  * SSO installer (rh-sso-7.0.0.zip)
  * SSO Adapter for EAP (rh-sso-7.0.0-eap6-adapter.zip)
@@ -11,7 +11,7 @@ and copy to this directory for the init.sh script or Docker builds to work.
 Ensure that these files are executable by running:
 
 chmod +x <path-to-project>/installs/jboss-eap-6.4.0-installer.jar
-chmod +x <path-to-project>/installs/jboss-eap-6.4.7-patch.zip
+chmod +x <path-to-project>/installs/jboss-eap-6.4.8-patch.zip
 chmod +x <path-to-project>/installs/jboss-brms-6.3.0.GA-installer.jar
 chmod +x <path-to-project>/installs/rh-sso-7.0.0.zip
 chmod +x <path-to-project>/installs/rh-sso-7.0.0-eap6-adapter.zip
